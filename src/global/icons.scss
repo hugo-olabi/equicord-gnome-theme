@@ -17,14 +17,6 @@
 	}
 }
 
-@mixin -default-icons($attr, $map) {
-	@each $id, $icon in $map {
-		[#{$attr}="#{$id}"] {
-			--icon: icon(#{$icon});
-		}
-	}
-}
-
 // Dynamic attributes
 [aria-label^="Remove answer"] {
 	--icon: icon("window-close");
@@ -263,10 +255,6 @@
 		"settings-sidebar___logout_sidebar_item": "system-log-out"
 	)
 );
-
-@@include -default-icons(
-
-)
 
 // Old settings dialog
 @include -gen-icons(
