@@ -23,23 +23,23 @@
 	}
 }
 
+// util.scss
 @mixin icon($name: null, $size: null) {
-	@if $name {
-		--icon: icon(#{$name});
-	}
-	@if $size {
-		--icon-size: #{$size};
-	}
-    @if variable-exists('icon') {
-    	background-color: currentColor;
+    @if $name {
+        --icon: icon(#{$name});
+        background-color: currentColor; // Set background color if name is provided
     }
-	mask: var(--icon);
-	mask-position: center;
-	mask-repeat: no-repeat;
-	mask-size: var(--icon-size);
+    @if $size {
+        --icon-size: #{$size};
+    }
 
-	width: var(--icon-size);
-	height: var(--icon-size);
+    mask: var(--icon);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: var(--icon-size);
+
+    width: var(--icon-size);
+    height: var(--icon-size);
 }
 
 @mixin inactive-dim {

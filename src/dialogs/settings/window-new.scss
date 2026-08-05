@@ -161,14 +161,26 @@
 			min-height: 36px;
 
 			&.active_caf372 {
-				background-color: color-mix(in srgb, currentColor 10%, transparent);
+				background-color: color-mix(
+					in srgb,
+					currentColor 10%,
+					transparent
+				);
 
 				&:hover {
-					background-color: color-mix(in srgb, currentColor 13%, transparent);
+					background-color: color-mix(
+						in srgb,
+						currentColor 13%,
+						transparent
+					);
 				}
 
 				&:active {
-					background-color: color-mix(in srgb, currentColor 19%, transparent);
+					background-color: color-mix(
+						in srgb,
+						currentColor 19%,
+						transparent
+					);
 				}
 			}
 
@@ -177,10 +189,8 @@
 
 				display: inline-block;
 
-				@if variable-exists('icon') {
-    				* {
-    					display: none;
-    				}
+				* {
+					display: none;
 				}
 			}
 		}
