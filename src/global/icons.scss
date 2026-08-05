@@ -17,6 +17,14 @@
 	}
 }
 
+@mixin -default-icons($attr, $map) {
+	@each $id, $icon in $map {
+		[#{$attr}="#{$id}"] {
+			--icon: icon(#{$icon});
+		}
+	}
+}
+
 // Dynamic attributes
 [aria-label^="Remove answer"] {
 	--icon: icon("window-close");
@@ -245,6 +253,8 @@
 		"settings-sidebar___system_panel": "keyboard3",
 		"settings-sidebar___language_and_time_panel": "translate",
 
+		"settings-sidebar___billing_panel": "credit-card",
+
 		"settings-sidebar___activity_privacy_panel": "screen-privacy4",
 		"settings-sidebar___connected_apps_panel": "grid-large",
 
@@ -253,6 +263,10 @@
 		"settings-sidebar___logout_sidebar_item": "system-log-out"
 	)
 );
+
+@@include -default-icons(
+
+)
 
 // Old settings dialog
 @include -gen-icons(

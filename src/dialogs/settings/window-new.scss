@@ -177,8 +177,10 @@
 
 				display: inline-block;
 
-				* {
-					display: none;
+				@if variable-exists('icon') {
+    				* {
+    					display: none;
+    				}
 				}
 			}
 		}

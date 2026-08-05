@@ -30,8 +30,9 @@
 	@if $size {
 		--icon-size: #{$size};
 	}
-
-	background-color: currentColor;
+    @if variable-exists('icon') {
+    	background-color: currentColor;
+    }
 	mask: var(--icon);
 	mask-position: center;
 	mask-repeat: no-repeat;
