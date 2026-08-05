@@ -13,7 +13,7 @@
 	@each $id, $icon in $map {
 		[#{$attr}="#{$id}"] {
 			--icon: icon(#{$icon});
-			background: currentColor!important;
+			background-color: currentColor!important;
 		}
 	}
 }
