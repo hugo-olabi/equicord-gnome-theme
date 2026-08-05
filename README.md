@@ -10,9 +10,9 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 ## Requirements
 
-1. Vesktop
+1. Vesktop/Equicord
 
-   Recommended for enabling the Discord's custom titlebar. Enable with Settings > Vesktop Settings > "Discord Titlebar".
+   Recommended for enabling the Discord's custom titlebar. Enable with Settings > Vesktop/Equicord Settings > "Discord Titlebar".
 
    You can still use something else like BetterDiscord - the theme will work but without the usual GNOME headerbar and with BetterDiscord content unthemed.
 
@@ -33,7 +33,7 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 Copy the following into the text box located in Settings > Themes > Online Themes:
 
 ```
-https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
+https://raw.githubusercontent.com/hugo-olabi/equicord-gnome-theme/master/gnome.theme.css
 ```
 
 If you'd like to configure it, put [gnome.theme.css][css-main] in `~/.config/vesktop/themes`. It's still updated automatically.
