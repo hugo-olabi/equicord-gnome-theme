@@ -28,7 +28,10 @@
     @if $name {
         --icon: icon(#{$name});
         background-color: currentColor; // Set background color if name is provided
+    } @else {
+        background-color: transparent;
     }
+
     @if $size {
         --icon-size: #{$size};
     }
