@@ -190,7 +190,7 @@
 				display: inline-block;
 
 				* {
-					display: none;
+					display: var(--svgdisplay, block);
 				}
 			}
 		}
