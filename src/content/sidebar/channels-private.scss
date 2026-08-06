@@ -2,10 +2,14 @@
 @use "typography";
 @use "util";
 
-[href="/channels/@me"] .avatar__20a53 {
-	@include util.icon("org.gnome.Settings-users");
+a .avatar__20a53 {
+    padding: 8px;
+}
 
-	padding: 8px;
+[href="/channels/@me"] .avatar__20a53 {
+    --bgcolor: currentColor!important;
+
+	@include util.icon("org.gnome.Settings-users");
 
 	svg {
 		display: none;
