@@ -142,6 +142,8 @@ $toast_fg_color: white;
 	&::before {
 		content: "";
 
+		--bgcolor: currentColor!important;
+
 		@include util.icon;
 
 		position: absolute;
