@@ -151,7 +151,7 @@ $toast_fg_color: white;
 	}
 
 	& > * {
-		display: none;
+		display: var(--svgdisplay);
 	}
 }
 
